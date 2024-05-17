@@ -1,0 +1,70 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorCorp1:#000;
+  --colorCorp2: #55ff00;
+  --colorCorp3:#3e3e3e80;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--colorCorp1);
+  color: var(--colorCorp2);
+}
+
+header {
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border: 1px dashed var(--colorCorp2);
+  background-color: var(--colorCorp3);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+main {
+  position: relative;
+  padding: 15px 15px;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.sidebar {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: 1px dashed var(--colorCorp2);
+  padding: 20px;
+  background-color: var(--colorCorp3);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
+.features {
+  position: relative;
+  margin-top: 120px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border: 1px dashed var(--colorCorp2);
+  padding: 20px;
+  background-color: var(--colorCorp3);
+  backdrop-filter: blur(30px);
+  z-index: 5;
+}
